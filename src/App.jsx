@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import TopNavbar from './Components/TopNavbar'
 import Home from './Components/Home'
 import SAT from './Components/SAT'
-
+import ViewRandomQuestion from './Components/ViewRandomQuestion'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/SAT" element={<SAT />} />
+        <Route path="/ViewRandomQuestion" element={<ViewRandomQuestion />} />
       </Routes>
     </div>
   );

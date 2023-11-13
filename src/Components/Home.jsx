@@ -13,9 +13,12 @@ export default function Home() {
             <h2>Practice and Prepare</h2>
             <Container style={{ margin: '0px' }}>
                 <Link to="/SAT">
-                    <HomeButton hasImage={true} title="Test Preview" />
+                    <HomeButton hasImage={true} title="Start SAT" />
                 </Link>
-                <HomeButton hasImage={true} title="Full-length practice" />
+                <Link to="/ViewRandomQuestion">
+                <HomeButton hasImage={true} title="View Random Question" />
+                </Link>
+
             </Container>
         </>
     )
