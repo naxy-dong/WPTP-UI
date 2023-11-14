@@ -17,7 +17,7 @@ export default function SAT() {
             <h2>Welcome to the SAT page</h2>
             <SectionHeader sectionNumber={1} title="Reading and writing" />
             <Question number={count + 1} content={question.content} prompt={question.prompt} answerChoices={question.answerChoices} />
-            <BottomNavbar clickFunc={nextQuestion} />
+            <BottomNavbar nextClickFunc={nextQuestion} renderHomeBtn={count + 1 === questionModel.length}/>
         </>
     )
 }
