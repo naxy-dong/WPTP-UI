@@ -14,8 +14,8 @@ export default function BottomNavbar({ prevClickFunc, nextClickFunc, renderHomeB
                         <Button variant="primary" >Back</Button>
                     </Col>}
                     {
-                        renderHomeBtn &&
-                        <Col><LinkButton path="/" text="Next" /></Col>
+                        renderHomeBtn && nextClickFunc &&
+                        <Col><LinkButton path="/" text="Next" clickFunc={nextClickFunc} /></Col>
                         ||
                         nextClickFunc && <Col>
                             <Button variant="primary" onClick={nextClickFunc}>Next</Button>

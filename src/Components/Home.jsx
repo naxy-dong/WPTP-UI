@@ -2,12 +2,16 @@ import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import HomeButton from './MyButton';
+import userAnswer from '../global'
 
 export default function Home() {
+    if (Object.entries(userAnswer).length !== 0) {
+        console.log(userAnswer);
+    }
+
     return (
         <>
             <h2>Your Tests</h2>
-            {/* <Footer /> */}
             <HomeButton hasImage={false} />
             <br />
             <h2>Practice and Prepare</h2>

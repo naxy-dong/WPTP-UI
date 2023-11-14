@@ -3,6 +3,7 @@ import BottomNavbar from './BottomNavbar';
 import Question from './Question'
 import SectionHeader from './SectionHeader';
 import questionModel from '../questionModel';
+import userAnswer from '../global';
 
 export default function SAT() {
     const [count, setCount] = useState(0);
@@ -10,8 +11,8 @@ export default function SAT() {
     const question = questionModel[count];
 
     const nextQuestion = () => {
-        if (selectedOption !== null){
-            console.log(selectedOption);
+        if (selectedOption !== null) {
+            userAnswer[count] = selectedOption;
             setCount((count) => count + 1);
             setSelectedOption(null);
         }
