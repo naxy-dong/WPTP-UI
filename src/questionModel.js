@@ -18,6 +18,10 @@ const questionModel = [
       {
         letter: 'd',
         text: 'dummy answer d'
+      },
+      {
+        letter: 'e',
+        text: 'dummy answer e'
       }
     ]
   },
@@ -40,6 +44,10 @@ const questionModel = [
       {
         letter: 'd',
         text: 'dummy answer d'
+      },
+      {
+        letter: 'e',
+        text: 'dummy answer e'
       }
     ]
   },
@@ -62,6 +70,10 @@ const questionModel = [
       {
         letter: 'd',
         text: 'dummy answer d'
+      },
+      {
+        letter: 'e',
+        text: 'dummy answer e'
       }
     ]
   }

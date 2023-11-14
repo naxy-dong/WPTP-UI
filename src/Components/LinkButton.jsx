@@ -7,4 +7,4 @@ export default function LinkButton({ path, text, clickFunc }) {
             <Button variant="primary" onClick={clickFunc}>{text}</Button>
         </Link>
     )
-}  
+}
