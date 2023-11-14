@@ -6,8 +6,9 @@ export default function Question({ number, content, prompt, answerChoices, selec
 
     return (
         <>
-            <div>Question {number}:</div>
+            <h4>Question {number}:</h4>
             <div>{content}</div>
+            <br />
             <div>{prompt}</div>
             {
                 answerChoices.map(choice => (
