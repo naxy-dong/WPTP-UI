@@ -2,8 +2,7 @@
 A UI mock for WPTP project
 
 ## TODO
-- Need to check if an option is checked before moving on to the next question/page
-
+- Clear answers when navigating back to the home page
 
 # React + Vite
 
