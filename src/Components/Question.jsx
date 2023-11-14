@@ -1,5 +1,9 @@
+export default function Question({ number, content, prompt, answerChoices, selectedOption, onOptionChange }) {
+    const handleOptionChange = (choice) => {
+        console.log(choice.letter);
+        onOptionChange(choice.letter);
+    };
 
-export default function Question({ number, content, prompt, answerChoices }) {
     return (
         <>
             <div>Question {number}:</div>
@@ -8,10 +12,16 @@ export default function Question({ number, content, prompt, answerChoices }) {
             {
                 answerChoices.map(choice => (
                     <div key={choice.letter} className="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3">
-                        <label className="options">{choice.text}
-                            <input type="radio" name="radio" />
+                        <label className="options">
+                            {choice.text}
+                            <input
+                                type="radio"
+                                name="radio"
+                                checked={selectedOption === choice.letter}
+                                onChange={() => handleOptionChange(choice)}
+                            />
                             <span className="checkmark">{choice.letter.toUpperCase()}</span>
-                        </label>  
+                        </label>
                     </div>
                 ))
             }
