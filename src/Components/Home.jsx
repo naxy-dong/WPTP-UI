@@ -4,7 +4,7 @@ import HomeButton from './MyButton';
 import userAnswer from '../global'
 
 export default function Home() {
-    if (Object.entries(userAnswer).length != 0) {
+    if (Object.entries(userAnswer).length !== 0) {
         console.log(userAnswer);
     }
 

@@ -1,3 +1,3 @@
 const userAnswer = {}
 
-export default userAnswer;
+export default userAnswer
